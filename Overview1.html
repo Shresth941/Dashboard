@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    
+      background-color: PowderBlue;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    
+  }
+  
+  .machine-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .machine-button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .machine {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .machine:hover {
+    background-color: #2980b9;
+  }
+
+  .machine.active {
+    background-color: #27ae60;
+  }
+
+  .machine.active:hover {
+    background-color: #219653;
+  }
+
+  .port-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .port-button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .port {
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .port.fault {
+    background-color: #e74c3c;
+  }
+
+  .port:hover {
+    background-color: #219653;
+  }
+
+  .port.fault:hover {
+    background-color: #c0392b;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .button {
+    background-color: #34495e;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+<title>Animated Machine and Port Buttons</title>
+</head>
+<body>
+  <div class="machine-container">
+    <button class="machine-button">
+      <div class="machine">Machine 1</div>
+    </button>
+    <button class="machine-button">
+      <div class="machine">Machine 2</div>
+    </button>
+    <button class="machine-button">
+      <div class="machine">Machine 3</div>
+    </button>
+    <button class="machine-button">
+      <div class="machine">Machine 4</div>
+    </button>
+  </div>
+  
+  <!-- Machine 1 Ports -->
+  <div class="port-container">
+    <button class="port-button">
+      <div class="port">Port 1</div>
+    </button>
+    <button class="port-button">
+      <div class="port fault">Port 1</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 1</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 1</div>
+    </button>
+  </div>
+
+  <!-- Machine 2 Ports -->
+  <div class="port-container">
+    <button class="port-button">
+      <div class="port">Port 2</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 2</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 2</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 2</div>
+    </button>
+  </div>
+
+  <!-- Machine 3 Ports -->
+  <div class="port-container">
+    <button class="port-button">
+      <div class="port">Port 3</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 3</div>
+    </button>
+    <button class="port-button">
+      <div class="port fault">Port 3</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 3</div>
+    </button>
+  </div>
+
+  <!-- Machine 4 Ports -->
+  <div class="port-container">
+    <button class="port-button">
+      <div class="port">Port 4</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 4</div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 4
+        
+      </div>
+    </button>
+    <button class="port-button">
+      <div class="port">Port 4</div>
+    </button>
+  </div>
+
+  <div class="button-container">
+    <button class="button">Home Page</button>
+    <button class="button">Main Menu</button>
+  </div>
+
+  <script>
+    // JavaScript code to handle button animations and data changes goes here
+  </script>
+</body>
+</html>

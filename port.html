@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Web Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+	<style>body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f2f2f2;
+	}
+	
+	#container {
+		max-width: 800px;
+		margin: 20px auto;
+		padding: 20px;
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		position: relative;
+	}
+	
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 20px;
+	}
+	
+	th, td {
+		border: 1px solid #ddd;
+		padding: 8px;
+		text-align: left;
+	}
+	
+	th {
+		background-color: #f2f2f2;
+	}
+	
+	#chart {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	
+	.chart-container {
+		width: calc(50% - 10px);
+		margin-bottom: 20px;
+	}
+	
+	#csvButton {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		background-color: #007bff;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	#csvButton:hover {
+		background-color: #0056b3;
+	}
+	</style>
+</head>
+<body>
+    <div id="container">
+        <h1>Data Visualization</h1>
+        <div id="filter">
+            <label for="timePeriod">Filter by Time Period:</label>
+            <select id="timePeriod">
+                <option value="present">Present</option>
+                <option value="days">Days</option>
+                <option value="months">Weeks</option>
+                <option value="weeks">Months</option>
+            </select>
+        </div>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will be added dynamically using JavaScript -->
+            </tbody>
+        </table>
+        <div id="chart">
+            <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <button id="csvButton">Download CSV</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

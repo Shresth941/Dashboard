@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Sidebar Dashboard </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        
+	</head>
+	<body>
+
+		<!--wrapper start-->
+		<div class="wrapper">
+			<!--header menu start-->
+			<div class="header">
+				<div class="header-menu">
+					<div class="title">TiEi <span>India</span></div>
+					<div class="sidebar-btn">
+						<i class="fas fa-bars"></i>
+					</div>
+					<ul>
+						<li><a href="#"><i class="fas fa-search"></i></a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<!--header menu end-->
+			<!--sidebar start-->
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<center class="profile">
+						<img src="image1.jpg" alt="">
+						<p></p>
+					</center>
+					<li class="item">
+						<a href="http://127.0.0.1:3000/Overview1.html" class="menu-btn">
+							<i class="fas fa-chart-pie"></i></i><span>Dashboard</span>
+						</a>
+					</li>
+					
+          <li class="item" id="permits">
+						<a href="#permits" class="menu-btn">
+							<i class="fas fa-sitemap"></i></i><span>Machine 1 <i class="fas fa-chevron-down drop-down">              </i></span>
+						</a>
+						<div class="sub-menu">
+                            
+							<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 1</span></a>
+							<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 2</span></a>
+              <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 3</span></a>
+              <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 4</span></a>							                      						</div>
+					</li>
+  	      
+          
+					
+          <li class="item" id="rejection">
+					<a href="#rejection" class="menu-btn">           
+					<i class="fas fa-sitemap"></i></i><span>Machine 2 <i class="fas fa-chevron-down drop-down"></i></span>
+					  	</a>
+						<div class="sub-menu">
+					    <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i></i><span>Port 1</span></a>
+							<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 2</span></a>
+							<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i></i><span>Port 3</span></a>
+							<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 4</span></a>
+						</div>
+				    </li>
+           
+            <li class="item" id="administration">
+						<a href="#administration" class="menu-btn">
+						<i class="fas fa-sitemap"></i></i><span>Machine 3 <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+						<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 1</span></a> 
+                        <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 2</span></a> 
+                        <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 3</span></a> 
+                        <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 4</span></a>           
+						</div>
+					</li>
+                    <script>
+                        function redirectToPort(portNumber) {
+                            // Construct the URL for the port page
+                            var portURL = "http://127.0.0.1:3000/port.html?port=" + portNumber;
+                            
+                            // Redirect to the specified port URL
+                            window.location.href = portURL;
+                        }
+                    </script>
+                
+
+                    <li class="item" id="something">
+						<a href="#somr=ething" class="menu-btn">
+						<i class="fas fa-sitemap"></i></i><span>Machine 4 <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+						<a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 1</span></a> 
+                        <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 2</span></a> 
+                        <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 3</span></a> 
+                        <a href="http://127.0.0.1:3000/port.html"><i class="fas fa-plug"></i><span>Port 4</span></a>           
+						</div>
+					
+					</li>
+
+          
+
+          
+          
+          <li class="item" id="quality">
+					  	<a href="#quality" class="menu-btn">
+               <i class="fas fa-file-alt"></i><span>Reports <i class="fas fa-chevron-down drop-down">              </i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-file-alt"></i><span>Complaints Reports</span></a>
+              <a href="#"><i class="fas fa-file-alt"></i><span>Resolution Reports</span></a>     
+						</div>
+					</li>
+
+         
+
+
+</pre>
+					<li class="item" id="settings">
+						<a href="#settings" class="menu-btn">
+							<i class="fas fa-cog"></i><span>Settings <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+							<a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+						</div>
+					</li>
+					<li class="item">
+						<a href="#" class="menu-btn">
+							<i class="fas fa-info-circle"></i><span>About</span>
+						</a>
+					</li>
+				</div>
+			</div>
+			<!--sidebar end-->
+			<!--main container start-->
+<!--main container start-->
+<div class="main-container">
+    <div class="welcome-message">
+		
+			<h1>Welcome to the Dashboard</h1>
+			
+        <!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      
+      background-color: PowderBlue;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .myDiv {
+      border: 5px outset black;
+      background-color: rgb(122,103,48);
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      padding: 10px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+
+    .logo {
+      width: 350px;
+      height: 150px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .custom-button {
+      background-color: transparent;
+      color: white;
+      width: 300px;
+      font-size: 20px;
+      border: 2px solid rgb(11, 135, 135);
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .custom-button:hover {
+      background-color: #008080;
+      color: black;
+      border-color: black;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+
+  <div class="myDiv">TIEI</div>
+  <div class="center">
+    <img src="image1.jpg" alt="TiEi logo" class="logo">
+  </div>
+ 
+  <div class="footer">
+    <h3>Developed by RNSIT-ECE DEPT</h3>
+  </div>
+
+  
+
+
+
+    </div>
+</div>
+<!--main container end-->
+
+<style>
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    .welcome-message {
+        text-align: center;
+    }
+
+    .welcome-message h1 {
+        font-size: 36px;
+        color: #333;
+        margin: 0;
+    }
+
+    .welcome-message .subtitle {
+        font-size: 18px;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Add animation */
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .welcome-message {
+        animation: fadeIn 1s ease-out;
+    }
+</style>
+
+</style>
+
+		</div>
+		<!--wrapper end-->
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+		});
+		</script>
+        
+
+	</body>
+</html>

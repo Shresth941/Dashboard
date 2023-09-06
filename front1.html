@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: PowderBlue;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .myDiv {
+      border: 5px outset black;
+      background-color: rgb(122,103,48);
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      padding: 10px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+
+    .logo {
+      width: 350px;
+      height: 150px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .custom-button {
+      background-color: transparent;
+      color: white;
+      width: 300px;
+      font-size: 20px;
+      border: 2px solid rgb(11, 135, 135);
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .custom-button:hover {
+      background-color: #008080;
+      color: black;
+      border-color: black;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="myDiv">TIEI</div>
+  <div class="center">
+    <img src="image1.jpg" alt="TiEi logo" class="logo">
+  </div>
+  <div class="button-container">
+    
+    
+    <div class="center">
+        <button style ="background-color: #008080;"
+       class="custom-button" onclick="func_machine(1)">Machine 1</button>
+    </div>
+    <div class="center">
+        <button style ="background-color: #008080;"
+      class="custom-button" onclick="func_machine(1)">Machine 2</button>
+    </div>
+    <div class="center">
+        <button style ="background-color: #008080;"
+      class="custom-button" onclick="func_machine(1)">Machine 3</button>
+    </div>
+    <div class="center">
+        <button style ="background-color: #008080;"
+     class="custom-button" onclick="func_machine(1)">Machine 4</button>
+    </div>
+    <div class="center">
+      <button style ="background-color: #008080;"
+   class="custom-button" onclick="func_overview(1)">Overview</button>
+  </div>
+
+  </div>
+  <div class="footer">
+    
+    <h3>Developed by RNSIT-ECE DEPT</h3>
+  </div>
+
+  <script>
+    function func_machine(machineNumber) {
+      location.replace("http://127.0.0.1:3000/second" + machineNumber + ".html");
+    }</script> 
+    <script>
+    function func_overview(machineNumber) {
+      location.replace("http://127.0.0.1:3000/Overview" + machineNumber + ".html");
+    } </script>
+  
+</body>
+
+</html>
